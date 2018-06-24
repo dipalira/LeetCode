@@ -1,2 +1,3 @@
 numRows = 3
-output = [for i in range(numRows)]
+output = [[1]*i for i in range(1, numRows+1 )]
+print(output)
