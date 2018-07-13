@@ -1,6 +1,6 @@
 nums = [1,3,5,6]
-target = 7
-def binary_search(array, target):
+target = 5
+"""def binary_search(array, target):
     lower = 0
     upper = len(array)
     while lower < upper:   # use < instead of <=
@@ -15,4 +15,11 @@ def binary_search(array, target):
         elif target < val:
             upper = x
     print(lower,upper)
-binary_search(nums,target)
+binary_search(nums,target)"""
+for x in range(0,len(nums)):
+	if nums[x] > target:
+		print(nums[x])
+		print(x-1)
+		break
+	else:
+		print(x)
