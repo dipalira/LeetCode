@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 nums = [1,3,5,6]
 target = 5
 """def binary_search(array, target):
@@ -23,3 +24,18 @@ for x in range(0,len(nums)):
 		break
 	else:
 		print(x)
+=======
+class Solution:
+    def searchInsert(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        index_ = 0
+        
+        for num in nums:
+            if num < target:
+                index_ += 1
+        return index_
+>>>>>>> 16f982d039b7c1aeda7eaeba42023e88cbad991c
