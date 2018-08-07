@@ -12,7 +12,7 @@ while (i < j):
 	sum_ = A[j] + A[i]
 	print(A[i],A[j], A[i] + A[j])
 	if sum_ == X:
-		print(A[i],A[j])
+		print("The result is ",A[i],A[j])
 		break
 	elif sum_  > X:
 		j-=1
