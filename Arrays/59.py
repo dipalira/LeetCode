@@ -19,6 +19,9 @@ def generateMatrix(n):
 n = 3
 result = [[0 for i in range(n)] for i in range(n)]
 coord = [[(i,j) for j in range(n)] for i in range(n)]
+count = 1
 while coord:
     for x,y in coord.pop(0):
-        print(x,y)
+        result[x][y] = count 
+        count += 1
+    coord = list(zip(*coord))[::-1]
